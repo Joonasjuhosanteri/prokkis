@@ -5,12 +5,13 @@ $conn = createDbConnection();
 $sql = "SELECT `primary_title`
 FROM `titles` INNER JOIN title_ratings
 ON titles.title_id = title_ratings.title_id
-WHERE average_rating = '.$rating.'
+WHERE average_rating = '$rating'
 LIMIT 10;";
 $prepare = $conn->prepare($sql);
 $prepare->execute();
 $rows = $prepare->fetchAll();
 $html = '<h1>' . $rating . '</h1>';
+echo $sql;
 $html .= '<ul>';
 foreach($rows as $row) {
     $html .= '<li>' .  $row['primary_title'] . 

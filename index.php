@@ -4,7 +4,7 @@
 
     // Hakukriteerit
 
-    $html = "<h2>Criteria</h2>";
+    $html = "<h2>Get titles by rating</h2>";
 
     $html .= '<form action="GET">';
 
