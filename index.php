@@ -2,17 +2,14 @@
 
     require_once('utilities.php');
 
-    // Hakukriteerit
 
     $html = "<h2>Get titles by rating</h2>";
 
     $html .= '<form action="GET">';
 
-    // Alue-pudotusvalikko
+    // Rating-pudotusvalikko
 
     $html .= createRatingDropDown();
-
-    // Genre-pudotusvalikko
 
 
     // Looppaa läpi tiedostot datasets-hakemistosta

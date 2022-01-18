@@ -1,5 +1,7 @@
 <?php
 
+//dropdown menun luominen
+
 function createRatingDropDown() { 
     require_once('db.php');
 

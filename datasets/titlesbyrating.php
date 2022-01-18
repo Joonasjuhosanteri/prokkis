@@ -1,4 +1,7 @@
 <?php
+
+//haku tietokannasta ja haun tulostus
+
 require_once('../db.php');
 $rating = $_GET['average_rating'];
 $conn = createDbConnection();
@@ -21,8 +24,3 @@ $html .= '</ul>';
 echo $html;
 
 
-/* SELECT `primary_title`
-FROM `titles` INNER JOIN title_ratings
-ON titles.title_id = title_ratings.title_id
-WHERE average_rating = 9
-LIMIT 10; */

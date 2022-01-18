@@ -1,6 +1,6 @@
 <?php
 
-
+//Tietokantayhteyden luonti
 
 function createDbConnection(){
 
